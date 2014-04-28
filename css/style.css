@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #FFF;
+	background: url(../images/background.jpg) repeat;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #CCC;
+    overflow-y: scroll;
+}
+
+h1 {
+	display: inline;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #444;
+	font: 15pt Tahoma, Geneva, sans-serif;
+}
+
+h2 {
+	font: 11pt Tahoma, Geneva, sans-serif;
+}
+
+p {
+	line-height: 200%;
+}
+
+a {
+	color: #096;
+}
+
+b {
+	color: #FFF;
+}
+
+ol {
+	margin: 25px;
+	font-size: 9pt;
+}
+
+#box {
+	width: 1000px;
+	background: #FFF;
+	margin: 0 auto;
+	box-shadow: #096 0px 0px 10px 1px;
+}
+
+#header {
+	width: 1000px;
+	height: 250px;
+	background: url(../images/header.jpg);
+}
+
+#header img {
+    display: block;
+    margin: 0 auto;
+}
+
+#menu {
+	width: 1000px;
+	height: 49px;
+	background: #222;
+	border-bottom: 2px solid #666;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	background: url(../images/menu-separator.jpg) repeat-y right;
+}
+
+#menu li a {
+	display: block;
+	padding:16px 25px;
+	font-size: 10pt;
+	color: #CCC;
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	background-color: #333;
+	color: #FFF;
+    border-bottom: 2px solid #096;
+}
+
+#info {
+	margin: 0 auto;
+	padding: 5px 20px;
+	background: #222;
+    border-bottom: 2px solid #333;
+}
+
+td {
+	text-align: center;
+	padding: 5px 20px;
+	border: 1px solid #444;
+	font-size: 8pt;
+}
+
+td a {
+	text-decoration: none;
+	color: #096;
+}
+
+td a:hover {
+	text-decoration: underline;
+	cursor: text;
+}
+
+tr {
+	text-align: center;
+	padding: 5px 15px;
+	border: 1px solid #444;
+	font-size: 8pt;
+}
+
+#content {
+	width: 960px;
+	padding: 20px;
+	background: #222;
+	margin-bottom: 150px;
+}
+
+form td {
+	text-align: center;
+	padding: 10px 25px;
+	border: none;
+	font-size: 9pt;
+}
+
+form input {
+	background: #111;
+	height: 25px;
+	border: 1px solid #444;
+	color: #444;
+}
+
+form input:hover {
+	border: 1px solid #096;
+}
+
+form input:focus {
+	border: 1px solid #096;
+	color: #096;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	min-width: 1000px;
+	margin-top: 50px;
+	padding: 20px 0px;
+	background: #111;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 12px;
+}

@@ -16,21 +16,22 @@ if ($username == "")
         exit();
 }
 
-$query = mysql_query("SELECT * FROM account_banned WHERE username = '$username'");
+$query = mysql_query("SELECT * FROM $db_auth.account_banned WHERE id in (SELECT $db_auth.account.id FROM $db_auth.account WHERE $db_auth.account.`username`='$username')");
 $rows = mysql_num_rows($query);
 
 if ($rows > 0)
 {
         echo "
-         <h2>История блокировок аккаунта чиста!<h2>
+         <h2>Аккаунт заблокирован!<h2>
      <br>
         <a href='?p=banned'><< Назад</a>
         ";
         exit();
 }
-
-mysql_query("SELECT * FROM account_banned WHERE username in (SELECT auth.account.id FROM auth.account WHERE auth.account.`username`='$username')");
-        echo "
-         <h2>Заблокирован аккаунт: <h2>
+else
+{        echo "
+         <h2>История блокировок чиста!<h2>
         ";
+	exit();
+}
 ?>

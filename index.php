@@ -22,6 +22,7 @@
 		<li><a href="?p=news" title="Новости">Новости</a></li>
 		<li><a href="?p=registration" title="Регистрация">Регистрация</a></li>
 		<li><a href="?p=banned" title="Забаненные">Забаненные</a></li>
+		<li><a href="?p=top" title="Топ команд арены">Топ арены</a></li>
 		<li><a href="?p=about" title="О проекте">О проекте</a></li>
         </ul>
     </div>
@@ -84,4 +85,3 @@
 </body>
 
 </html>
-
